@@ -19,3 +19,6 @@ npm install
 npm start
 
 (testing) npm run test
+
+main voting page http://localhost:8090/#/
+results page  http://localhost:8090/#/results
