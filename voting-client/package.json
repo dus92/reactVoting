@@ -1,0 +1,48 @@
+{
+  "name": "voting-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:@babel/register --require ./test/test_helper.js \"test/**/*@(.js|.jsx)\"",
+    "test:watch": "npm run test -- --watch",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+  },
+  "keywords": [],
+  "author": "Yury <drozdov.dev@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "autoprefixer-loader": "^3.2.0",
+    "chai": "^4.2.0",
+    "chai-immutable": "^1.6.0",
+    "css-loader": "^1.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "jsdom": "^13.0.0",
+    "mocha": "^5.2.0",
+    "raf": "^3.4.1",
+    "react-hot-loader": "^4.3.12",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "immutable": "^4.0.0-rc.12",
+    "react": "^16.6.3",
+    "react-addons-pure-render-mixin": "^15.6.2",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.6.3",
+    "react-redux": "^5.1.1",
+    "react-router": "^3.2.0",
+    "redux": "^4.0.1",
+    "socket.io-client": "^2.1.1"
+  }
+}
