@@ -6,11 +6,15 @@ Using React-Redux-Babel-Mocha-Immutable-SocketIO
 #voting-client
 
 npm install
+
 npm start
+
 (testing) npm run test
 
 #voting-server
 
 npm install
+
 npm start
+
 (testing) npm run test
