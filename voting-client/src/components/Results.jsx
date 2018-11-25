@@ -10,19 +10,19 @@ export const VOTE_WIDTH_PERCENT = 8;
 
 export const Results = createReactClass({
     mixins: [PureRenderMixin],
-    getPair: function() {
+    getPair() {
         return this.props.pair || [];
     },
-    getVotes: function(entry) {
+    getVotes(entry) {
         if (this.props.tally && this.props.tally.hasOwnProperty(entry)) {
             return this.props.tally[entry];
         }
         return 0;
     },
-    getVotesBlockWidth: function(entry) {
+    getVotesBlockWidth(entry) {
         return (this.getVotes(entry) * VOTE_WIDTH_PERCENT) + '%';
     },
-    render: function() {
+    render() {
         return this.props.winner ?
             <div>
                 <Winner ref="winner" winner={this.props.winner} />

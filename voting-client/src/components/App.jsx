@@ -4,7 +4,7 @@ import {List, Map} from 'immutable';
 let createReactClass = require('create-react-class');
 
 export default createReactClass({
-    render: function() {
+    render() {
         return this.props.children;
     }
 });

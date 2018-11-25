@@ -8,12 +8,13 @@ import reducer from '../src/reducer';
 
 describe('reducer', () => {
 
-    it('обрабатывает SET_STATE с простой JS-нагрузкой', () => {
+    it('handles SET_STATE with plain JS payload', () => {
         const initialState = Map();
         const action = {
             type: 'SET_STATE',
             state: {
                 vote: {
+                    round: 1,
                     pair: ['Trainspotting', '28 Days Later'],
                     tally: {Trainspotting: 1}
                 }
@@ -23,13 +24,14 @@ describe('reducer', () => {
 
         expect(nextState).to.equal(fromJS({
             vote: {
+                round: 1,
                 pair: ['Trainspotting', '28 Days Later'],
                 tally: {Trainspotting: 1}
             }
         }));
     });
 
-    it('обрабатывает SET_STATE без начального состояния', () => {
+    it('handles SET_STATE without initial state', () => {
         const action = {
             type: 'SET_STATE',
             state: {

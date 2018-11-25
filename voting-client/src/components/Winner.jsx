@@ -4,7 +4,7 @@ let createReactClass = require('create-react-class');
 
 export default createReactClass({
     mixins: [PureRenderMixin],
-    render: function() {
+    render() {
         return <div className="winner">
             Winner is {this.props.winner}!
         </div>;

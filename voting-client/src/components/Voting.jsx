@@ -9,7 +9,7 @@ let createReactClass = require('create-react-class');
 
 export const Voting = createReactClass({
     mixins: [PureRenderMixin],
-    render: function() {
+    render() {
         return <div>
             {this.props.winner ?
                 <Winner ref="winner" winner={this.props.winner} /> :
